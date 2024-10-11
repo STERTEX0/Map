@@ -1,0 +1,33 @@
+/* ปุ่ม Zoom In / Zoom Out */
+.gm-control-active, .gm-bundled-control {
+    background-color: #333 !important; /* เปลี่ยนสีพื้นหลังเป็นสีดำ */
+    color: #fff !important; /* เปลี่ยนสีตัวอักษรเป็นสีขาว */
+    border: 1px solid #555 !important; /* เพิ่มขอบสีเทา */
+  }
+  
+  /* ปุ่ม Show Street Map / Show Satellite Imagery */
+  .gmnoprint div {
+    background-color: #333 !important; /* เปลี่ยนสีพื้นหลังเป็นสีดำ */
+    color: #fff !important; /* เปลี่ยนสีข้อความเป็นสีขาว */
+  }
+  
+  /* ปุ่ม Toggle Fullscreen */
+  .gmnoprint .gm-fullscreen-control {
+    background-color: #333 !important; /* เปลี่ยนสีพื้นหลังเป็นสีดำ */
+    color: #fff !important; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    border: none !important; /* ลบขอบของปุ่ม */
+  }
+  
+  /* Pegman (Drag Pegman for Street View) */
+  .gmnoprint .gm-svpc, .gm-svpc-icon {
+    background-color: #333 !important; /* เปลี่ยนสีพื้นหลังเป็นสีดำ */
+    color: #fff !important; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+  }
+  
+  /* ปุ่มอื่นๆ ที่ไม่สามารถกำหนดค่าโดยตรง */
+  .gmnoprint .gm-bundled-control-on-bottom {
+    background-color: #333 !important; /* เปลี่ยนสีพื้นหลังเป็นสีดำ */
+    color: #fff !important; /* เปลี่ยนสีข้อความเป็นสีขาว */
+  }
+  

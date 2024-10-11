@@ -1,0 +1,103 @@
+/* Sidebar styling */
+.sidebar {
+  width: 270px; /* Width of the sidebar */
+  background-color: #333;
+  
+  padding: 10px;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Vertical scrollbar if content exceeds size */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-bottom: 20px; /* Space below the buttons */
+}
+
+/* เปลี่ยนสีปุ่ม "ทั้งหมด" */
+.button-container .btn-primary {
+  background-color: #6c757d !important; /* สีเทา */
+  border-color: #6c757d !important;
+}
+
+/* เปลี่ยนสีปุ่ม "แสดงอันเดียว" */
+.button-container .btn-secondary {
+  background-color: #6c757d !important; /* สีเทา */
+  border-color: #6c757d !important;
+}
+
+/* เพิ่มการเปลี่ยนสีเมื่อ hover */
+.button-container .btn-primary:hover, .button-container .btn-secondary:hover {
+  background-color: #5a6268 !important; /* สีเทาเข้มขึ้นเมื่อ hover */
+  border-color: #545b62 !important;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-direction: column; /* Align cards in a column */
+  gap: 10px; /* Space between cards */
+  
+}
+
+/* Card styling */
+.card {
+  display: flex; /* Flexbox for card layout */
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  border: 1px solid #dee2e6; /* Border around the card */
+  cursor: pointer; /* Pointer cursor to indicate clickability */
+  transition: transform 0.2s ease-in-out; /* Transition effect for hover */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  width: 250px; /* Fixed width */
+  height: 110px; /* Fixed height */
+  background-color: #313030;
+}
+
+/* Card image styling */
+.card-img-top {
+  width: 125px; /* Fixed width of the image */
+  height: 100%; /* Full height of the card */
+  object-fit: cover; /* Crop image to fit */
+}
+
+/* Card body content styling */
+.card-body-content {
+  flex: 1; /* Take up the remaining space */
+  padding: 10px; /* Padding inside the card body */
+  display: flex; /* Flexbox for card body layout */
+  flex-direction: column; /* Align items in a column */
+  color: #e9f7ff;
+}
+
+/* Highlighted card styling */
+.card.highlight {
+  border: 2px solid #777777; /* Highlight border */
+  background-color: #313030; /* Highlight background */
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 12px; /* Font size */
+  margin-bottom: 5px; /* Space between text lines */
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 270px; /* Adjust width for smaller screens */
+  }
+
+  .card {
+    width: 250px; /* Adjust card width for smaller screens */
+    height: auto; /* Adjust card height for smaller screens */
+  }
+
+  .card-img-top {
+    width: 125px; /* Adjust image width for smaller screens */
+  }
+}
